@@ -1,0 +1,57 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  #container {
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  #animatedBox {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-top: 20px;
+    transition: transform 1s ease, background-color 0.5s ease;
+  }
+  
+  /* Animation */
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .animate {
+    animation: bounce 1s ease-in-out;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #333;
+    color: white;
+  }
+  
+  body.dark-mode button {
+    background-color: #555;
+    color: white;
+  }
+  
